@@ -13,11 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('bloques', function (Blueprint $table) {
+        Schema::create('categorias', function (Blueprint $table) {
             $table->id();
             $table->string('nombre',255);
             $table->text('descripcion');
+            $table->unsignedBigInteger('bloque_id');
+            $table->foreign('bloque_id')
+                  ->references('id')->on('bloques');
+            
             $table->timestamps();
+
+                
         });
     }
 
@@ -28,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bloques');
+        Schema::dropIfExists('categorias');
     }
 };
