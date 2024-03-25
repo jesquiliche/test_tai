@@ -8,4 +8,8 @@
     display: none;
 }
 
+.form-control {
+    @apply block bg-indigo-100 text-gray-950 border-0 rounded-lg p-2 w-full;
+  }
+  
 

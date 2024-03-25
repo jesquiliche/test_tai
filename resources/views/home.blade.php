@@ -14,13 +14,14 @@
         left: 0;
         width: 100%;
         height: 86%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.4);
+        
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         color: white;
-        z-index: 8;
+        z-index: 2;
     }
 
     img {
@@ -30,10 +31,7 @@
        
     }
 
-    .card-content {
-        position: relative; /* Para que el contenido de la tarjeta esté posicionado relativamente */
-        z-index: 1; /* Para que el contenido esté por encima del fondo oscurecido */
-    }
+  
 </style>
 @endsection
 
@@ -41,38 +39,39 @@
 <div id="portada" class="w-full">
     <img src="/aplicaciones.jpg" alt="portada1">
     <div class="overlay">
-        <h1 class="text-5xl font-bold">Oposiciones a Técnico Auxiliar de Informática</h1>
-        <p class="text-xl mt-5">Personaliza tu preparación. Podrás hacer test por temas y materias sin límites. ¡Haz
-            los test que quieras, cuando quieras!</p>
+        <h1 class="text-5xl font-bold">Oposiciones a técnico auxiliar de informática</h1>
+        <p class="w-3/5 text-xl mt-4 font-bold italic">Personaliza tu preparación. Podrás hacer test por temas y materias sin límites. </p>
+            <h2 class="text-xl mt-1 font-bold italic">Haz
+                los test que quieras, cuando quieras!</h2>
     </div>
 </div>
-<div class="grid grid-cols-3 gap-12 w-10/12  mx-auto mt-5">
-    <x-card>
-        <img src="/portada1.jpg" class="rounded-lg" alt="portada2">
-        <div class="card-content">
-            <p class="m-4 text-lg "><b>Fácil y cómodo de seguir</b></p>
+<div class="grid grid-cols-3 gap-12 w-10/12  mx-auto mt-2">
+    <x-card title="Fácil y cómodo de seguir">
+        <img src="/portada1.jpg" class="rounded-lg" alt="portada1">
+        <div class="card-content m-4">
             Accesible desde cualquier dispositivo y con una interfaz intuitiva. ¡Regístrate ahora y alcanza el éxito en tu examen de oposición!
         </div>
     </x-card>
-    <x-card>
+    <x-card title="Temario actualizado">
         <img src="/portada2.jpg" class="rounded-lg" alt="portada2">
-        <div class="card-content">
-            <p class="text-lg m-4"><b>Temario actualizado</b></p>
-            Preguntas actualizadas al temario de la última convocatoria de 2022 y anteriores en nuestra plataforma en línea. ¡Regístrate ahora y obtén una preparación efectiva!
+        <div class="m-4">
+                      Preguntas actualizadas al temario de la última convocatoria de 2022 y anteriores en nuestra plataforma en línea. ¡Regístrate ahora y obtén una preparación efectiva!
         </div>
     </x-card>
-    <x-card>
+    <x-card title="Más de 1000 preguntas">
         <img src="/portada3.jpeg" class="rounded-lg" alt="portada3">
-        <div class="card-content">
-            <p class="text-lg m-4"><b>Más de 1000 preguntas</b></p>
+        <div class="m-4 font-semibold">
+           
             Regístrate ahora para acceder a más de 1000 preguntas diseñadas por expertos. ¡Obtén una preparación efectiva y alcanza el éxito en tu examen de oposición!
         </div>
     </x-card>
 </div>
 <div class="w-10/12 mx-auto p-4 text-center">
-    <x-card>
-        <p class="m-5 text-xl"><b>Contenido del temario</b></p>
+    <x-card title="Contenido del temario">
+    <div class="p-2">
         El temario se dividirá en 36 temas estructurados en cuatro bloques. El primero de ellos se centra en materias legislativas y jurídicas, y los tres restantes versan sobre contenido informático.
+    </div>
     </x-card>
+
 </div>
 @endsection
