@@ -3,6 +3,7 @@
 @section('content')
     <div class="w-8/12 mx-auto py-24">
         <h2 class="text-center text-2xl font-bold">{{ $titulo }}</h2>
+       
         @php
             $x = 0;
         @endphp
@@ -51,7 +52,7 @@
                 @endforeach
                 <input type="hidden" name="registros" value="{{ $x }}">
                 <div class="container col-lg-8 text-center py-2 mt-3 mx-auto">
-                    <input type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                    <input type="submit" class="btn-primary"
                         value="Corregir">
                 </div>
             </form>
@@ -62,5 +63,6 @@
                     class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Ok</a>
             </div>
         @endif
+      
     </div>
 @endsection

@@ -8,6 +8,10 @@
     display: none;
 }
 
+.btn-primary{
+  @apply bg-gray-600 text-white rounded-lg py-1 px-4 font-bold
+}
+
 .form-control {
     @apply block bg-indigo-100 text-gray-950 border-0 rounded-lg p-2 w-full;
   }

@@ -31,7 +31,7 @@
                         </div>
 
                         <br />
-                        <input type="submit" class="bg-blue-600 text-white rounded-lg py-1 px-4" value="Hacer test">
+                        <input type="submit" class="btn-primary" value="Hacer test">
                     </div>
                 </form>
             </x-card>
@@ -66,7 +66,7 @@
                             </select>
                         </div>
 
-                        <input type="submit" class="mt-5 bg-blue-600 text-white rounded-lg py-1 px-4" value="Hacer test">
+                        <input type="submit" class="mt-5 btn-primary" value="Hacer test">
                     </div>
                 </form>
             </x-card>
@@ -93,7 +93,7 @@
                 </div>
 
                <div class="mt-24">
-                <input type="submit" class="mt-2  bg-blue-600 text-white rounded-lg py-1 px-4" value="Hacer test">
+                <input type="submit" class="mt-2 btn-primary" value="Hacer test">
                </div>
             </form>
             
