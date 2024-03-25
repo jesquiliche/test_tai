@@ -12,4 +12,6 @@
     @apply block bg-indigo-100 text-gray-950 border-0 rounded-lg p-2 w-full;
   }
   
-
+  .nav-link {
+    @apply hover:bg-gray-400 hover:rounded-md hover:text-white py-1 px-4;
+}

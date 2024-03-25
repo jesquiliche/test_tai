@@ -8,7 +8,7 @@
         <div class="h-full">
             <x-card title="Test por Bloque">
                 <img src="/bloque.jpg"/ class="rounded-full">
-                <form action="{{ route('preguntasbloque') }}" method="POST" class="mt-5">
+                <form action="{{ route('preguntastema') }}" method="POST" class="mt-5">
                     @csrf
 
                     <div class="form-group font-bold">
@@ -39,7 +39,7 @@
         <div class="h-full">
             <x-card title="Test por Temas">
                 <img src="/categorias.jpg" class="rounded-full"/>
-                <form action="{{ route('preguntasbloque') }}" method="POST" class="mt-5">
+                <form action="{{ route('preguntas') }}" method="POST" class="mt-5">
                     @csrf
 
                     <div class="mt-2 font-bold">
