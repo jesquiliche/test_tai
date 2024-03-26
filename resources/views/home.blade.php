@@ -14,7 +14,7 @@
         left: 0;
         width: 100%;
         height: 86%;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.7);
         
         display: flex;
         justify-content: center;
@@ -36,7 +36,7 @@
 @endsection
 
 @section('content')
-<div id="portada" class="w-full">
+<div id="portada" class="hidden md:w-full md:block">
     <img src="/aplicaciones.jpg" alt="portada1">
     <div class="overlay">
         <h1 class="text-5xl font-bold">Oposiciones a técnico auxiliar de informática</h1>
@@ -45,7 +45,7 @@
                 los test que quieras, cuando quieras!</h2>
     </div>
 </div>
-<div class="grid grid-cols-3 gap-12 w-10/12  mx-auto mt-2">
+<div class="grid cols-1 md:grid-cols-3 md:gap-12 w-10/12  mx-auto mt-2">
     <x-card title="Fácil y cómodo de seguir">
         <img src="/portada1.jpg" class="rounded-lg" alt="portada1">
         <div class="card-content m-4">
@@ -59,7 +59,7 @@
         </div>
     </x-card>
     <x-card title="Más de 1000 preguntas">
-        <img src="/portada3.jpeg" class="rounded-lg" alt="portada3">
+        <img src="/portada3.jpeg" class="rounded-lg w-full mx-auto"  alt="portada3">
         <div class="m-4 font-semibold">
            
             Regístrate ahora para acceder a más de 1000 preguntas diseñadas por expertos. ¡Obtén una preparación efectiva y alcanza el éxito en tu examen de oposición!

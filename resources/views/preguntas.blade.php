@@ -1,21 +1,21 @@
 @extends('layouts.test')
 
 @section('content')
-    <div class="w-8/12 mx-auto py-24">
+    <div class="w-10/12 mx-auto py-24">
         <h2 class="text-center text-2xl font-bold">{{ $titulo }}</h2>
        
         @php
             $x = 0;
         @endphp
         @if(count($preguntas) > 0)
-            <form action="" method="POST">
+            <form action="{{ route('corrector') }}" method="POST">
                 @csrf
                 @foreach ($preguntas as $pregunta)
                     @php
                         $x++;
                     @endphp
                     <div class="">
-                        <div class="w-10/12 mx-auto">
+                        <div class="w-11/12 mx-auto">
                             <x-pregunta title="{{ $x }}. {{ $pregunta->pregunta }}">
                                 <input type="hidden" name="texto{{ $x }}" value="{{ $pregunta->pregunta }}">
                                 <input type="hidden" name="pregunta{{ $x }}" value="{{ $pregunta->id }}">

@@ -15,6 +15,8 @@ Route::middleware([
         return view('home');
     })->name('dashboard');
 });
+
+Route::post('/corrector',[\App\Http\Controllers\CorrectorController::class,'corregir'])->name('corrector');
 Route::post('/preguntastema', [App\Http\Controllers\PreguntaController::class,'showByBloque'])->name('preguntastema');
 
 Route::post('/preguntas', [App\Http\Controllers\PreguntaController::class,'showByCategory'])->name('preguntas');
