@@ -45,7 +45,7 @@
                 los test que quieras, cuando quieras!</h2>
     </div>
 </div>
-<div class="grid cols-1 md:grid-cols-3 md:gap-12 w-10/12  mx-auto mt-2">
+<div class="grid cols-1 md:grid-cols-3 md:gap-12 w-10/12  mx-auto  mt-22 md:mt-2">
     <x-card title="Fácil y cómodo de seguir">
         <img src="/portada1.jpg" class="rounded-lg" alt="portada1">
         <div class="card-content m-4">

@@ -3,7 +3,7 @@
 
 
 @section('content')
-    <div class="w-10/12 mx-auto py-24">
+    <div class="md:w-10/12 mx-auto py-24">
 <h2 class="text-2xl text-center font-bold">Resultado del test</h2>
             @php
                 $data = $preguntas;

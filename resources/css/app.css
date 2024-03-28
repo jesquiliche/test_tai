@@ -9,7 +9,7 @@
 }
 
 .btn-primary{
-  @apply bg-gray-600 text-white rounded-lg py-1 px-4 font-bold
+  @apply bg-gray-700 hover:bg-gray-950 text-white rounded-lg py-1 px-4 font-bold
 }
 
 .form-control {

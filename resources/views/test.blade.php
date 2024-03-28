@@ -1,8 +1,8 @@
 @extends('layouts.test')
 
 @section('content')
-    <div class="w-10/12 text-center grid grid-cols-3 gap-4 py-24 mx-auto">
-        <div class="col-span-3 text-center text-2xl font-bold">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 py-24 mx-auto w-10/12 text-center ">
+        <div class="col-span-1 lg:col-span-3 text-center text-2xl font-bold">
             Selecione tipo de test
         </div>
         <div class="h-full">
@@ -73,7 +73,7 @@
         </div>
         <div class="h-full">
             <x-card title="Test general">
-                <img src="/general.jpg" class="rounded-full"/>
+                <img src="/general.jpg" class="rounded-full hidden md:block" width={100} height={100}/>
             <form action="{{ route('preguntasgeneral') }}" method="POST">
                 @csrf
               
