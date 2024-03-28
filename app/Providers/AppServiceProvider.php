@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,8 +20,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-    // Redirige todas las solicitudes HTTP a HTTPS
-        if (config('app.env') === 'production') {
-            \Illuminate\Support\Facades\URL::forceScheme('https');
+        // Redirige todas las solicitudes HTTP a HTTPS en producción
+        if ($this->app->environment('production') && !request()->isSecure()) {
+            URL::forceScheme('https');
+        }
     }
 }
